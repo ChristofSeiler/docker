@@ -1,5 +1,5 @@
 # Docker inheritance
-FROM bioconductor/bioconductor_docker:RELEASE_3_18
+FROM bioconductor/bioconductor_docker:RELEASE_3_20
 
 # Install required Bioconductor package
 RUN R -e 'BiocManager::install(c("readxl", "tidyverse", "pheatmap", "tximeta", "DESeq2", "AnnotationDbi", "org.Hs.eg.db"))'
